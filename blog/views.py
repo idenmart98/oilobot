@@ -46,7 +46,7 @@ def post_details(request,post_id, lang):
 def category_details(request, cat_id, lang):
     posts = Post.objects.filter(category__id = cat_id)
     if lang == 'kg':
-        return render(request, 'post_kg.html', context = {'posts':posts})
+        return render(request, 'post_kg.html', context = {'posts':posts,"cat_id":cat_id})
     
-    return render(request, "post.html", context = {"posts":posts}) 
+    return render(request, "post.html", context = {"posts":posts, "cat_id":cat_id}) 
 
