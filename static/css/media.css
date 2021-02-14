@@ -208,3 +208,181 @@
         padding: 3px 0;
     }
 }
+
+@media(max-width: 355px) {
+    header .top{
+        padding-top: 10px;
+    }
+    header .top ul {
+        display: grid;
+    }
+    header .top .links{
+        padding-top: 15px;
+    }
+    header .top li {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    header .bottom p {
+        font-size: 14px;
+    }
+    header .bot img {
+        width: 200px;
+    }
+    .first .top p{
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    .first .top a {
+        padding-bottom: 10px;
+        font-size: 12px;
+    }
+    .first .top button {
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+    .first .bottom p {
+        font-size: 12px;
+    }
+    .first::after {
+        display: inline;
+    }
+    .second .health{
+        padding: 0;
+    }
+    .second .row p {
+        font-size: 11px;
+    }
+    .second .health .left{
+        display: none;
+    }
+    .third .row {
+         padding: 0;
+    }
+    .third .link {
+         padding: 0;
+    }
+    .third .link p {
+        font-size: 12px;
+         padding-bottom: 15px;
+    }
+    .third::after {
+        display: none;
+    }
+    .third .link .elly {
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+    .fourth .title h5{
+        padding: 0;
+    }
+    .fourth .left .top {
+        width: 100%;
+    }
+    .fourth .bottom {
+        display: grid;
+    }
+    .fourth .bottom .left {
+        width: 100%;
+        padding: 28px;
+    }
+    .fourth .bottom p{
+        margin-bottom: 0;
+    }
+    .fourth .bottom .right {
+        width: 100%;
+        padding: 28px;
+        margin-top: 10px;
+        background-size: 100% 100%;
+    }
+    .fourth .bottom p{
+        margin-bottom: 0;
+    }
+    .fourth .link p {
+        font-size: 12px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .fourth .link .elly{
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+    .fourth {
+        padding: 20px 0;
+    }
+    .fifth .title h4 {
+        font-size: 32px;
+    }
+    .fifth p{
+        font-size: 12px;
+    }
+    .sixth .title h5 {
+        font-size: 32px;
+    }
+    .sixth .card {
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto 20px;
+    }
+    .sixth .card h5 {
+        padding: 5px 0;
+    }
+    .sixth .card p{
+        font-size: 12px;
+    }
+    .sixth::after{
+        display: none;
+    }
+    .eighth .left p{
+        margin-bottom: 0;
+    }
+    .tenth .title h5 {
+        font-size: 30px;
+    }
+    .tenth .left p {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    .tenth .img img{
+        width: 100%;
+    }
+    .tenth .img img {
+        background-size: 100%;
+    }
+    footer .link p{
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    footer .link .elly{
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+    footer .top {
+        display: grid;
+        justify-content: center;
+        padding: 0;
+    }
+    footer .top .links{
+        text-align: center;
+    }
+    footer .top .links a {
+        padding: 5px 20px;
+    }
+    footer .top .links .left {
+        margin-bottom: 10px;
+    }
+    footer .question p{
+        margin-top: 0;
+        text-align: center;
+    }
+    footer .text p {
+        font-size: 12px;
+    }
+    footer .middle .links1 a {
+        color: white;
+        padding: 0;
+    }
+    footer .bottom p {
+        font-size: 10px;
+    }
+}
