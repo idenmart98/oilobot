@@ -184,9 +184,6 @@ footer .bottom{
     display: flex;
     justify-content: space-around;
 }
-h1 {
-    margin: auto;
-}
 .card img{
     margin: 0 auto;
     display: flex;
