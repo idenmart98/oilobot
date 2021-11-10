@@ -1,4 +1,5 @@
 venv/
+env/
 .vscode/
 settings_local.py
 *.pyc

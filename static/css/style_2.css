@@ -2,7 +2,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 header{
-    background: url("https://elibot.info/img/bg-heder.jpg") no-repeat;
+    background: url("/static/fon/main.png") no-repeat;
     background-size: cover;
     /*background-position: center;*/
     color: white;
@@ -40,6 +40,7 @@ header .top .logo p{
 }
 header .bot img{
     width: 350px;
+    margin: -50px 0 70px;
 }
 header h2{
     text-transform: uppercase;
@@ -106,30 +107,42 @@ header .bottom p{
     text-align: center;
     font-size: 50px;
     font-weight: 600;
-    padding: 20px 0 60px;
+    padding: 20px 0;
 }
 .second .health{
     display: flex;
 }
 .second h3{
+    font-size: 18px;
     padding-bottom: 5px;
 }
 .second .health .left {
-    text-align: right;
-    padding: 20px 10px 20px 0;
+    text-align: center;
+}
+.second .health .left h3{
+    font-size: 20px;
+}
+.second .health .right {
+    text-align: center;
 }
 .second .health img{
-    width: 100px;
+    width: 70px;
+}
+.second .middle {
+    display: flex;
+    justify-content: center;
 }
 .second .middle img{
-    width: 100%;
+    width: 140%;
+    margin: -140px 0 0;
 }
 .third {
-    background: url("https://elibot.info/img/bg-serotonin.png") no-repeat;
-    height: 100%;
+    background: url("/static/fon/dialoge.png") no-repeat ;
+    background-size: 80%;
+    height: 80%;
 }
 .third h2{
-    font-size: 50px;
+    font-size: 38px;
     font-weight: 600;
 }
 .third .top{
@@ -154,6 +167,9 @@ header .bottom p{
     display: inline-block;
     border-radius: 15px;
     margin-bottom: 20px;
+}
+.third img{
+    margin-top: -150px;
 }
 .third .link {
     text-align: center;
@@ -180,7 +196,6 @@ header .bottom p{
     background-size: cover;
 }
 .fourth{
-    background: url("https://elibot.info/img/bg-adrenaline.png") right no-repeat;
     padding: 30px 0 100px;
 }
 .fourth .row{
@@ -193,64 +208,34 @@ header .bottom p{
     font-weight: 600;
     padding: 70px 0 90px;
 }
-.fourth .left .top {
-    background: url("https://elibot.info/img/bg-help-one-yellow.svg");
-    background-size: 100% 100%;
-    width: 80%;
-    padding: 4rem 5.5rem 4rem;
-    color: #fff;
-    text-align: center;
+.fourth .top{
+    display: flex;
+} 
+.fourth .right{
+    display: flex;
+    margin-left: 30px;
 }
-.fourth .left .top p{
-    outline: none;
+.fourth .right img{
+    width: 60px;
 }
-.fourth .left .bottom .img{
-    text-align: center;
+.fourth .bottom{
+    display: flex;
+    margin-left: 70px;
 }
-.fourth .bottom .left{
-    background: url("https://elibot.info/img/bg-help-one-blue.svg");
-    background-size: 100% 100%;
-    width: 111%;
-    text-align: center;
-    color: white;
-    padding: 53px;
-    border-radius: 20px;
-}
-.fourth .bottom {
-    padding-top: 40px;
-    margin-bottom: 50px;
-}
-.fourth .bottom .right{
-     background: url("https://elibot.info/img/bg-help-one-purpule.svg") no-repeat;
-    background-size: 100% 90%;
-    width: 120%;
-    color: #fff;
-    text-align: center;
-     padding: 30px;
-     border-radius: 20px;
-    margin-top: 50px;
- }
-.fourth .left .top .img{
-    text-align: center;
-}
-.fourth h4{
-    font-size: 20px;
+.fourth .bottom img{
+    width: 55px;
 }
 .fourth .bottom {
     display: flex;
-    justify-content: space-between;
 }
-.fourth .top img{
-    width: 50px;
+.fourth .left img{
+    margin-right: 50px;
 }
-.fourth img{
-    width: 50px;
+.fourth .left .title p{
+    font-size: 15px;
 }
-.fourth .mainRight .heart img{
-    width: 20%;
-}
-.fourth .mainRight img{
-    width: 100%;
+.fourth .left .title h3{
+    font-size: 20px;
 }
 .fourth .link{
     text-align: center;
@@ -267,7 +252,7 @@ header .bottom p{
     text-decoration: none;
 }
 .fifth{
-    background: url("https://elibot.info/img/bg-section-every.jpg");
+    background: url("/static/fon/fon1.png");
     background-size: cover;
 }
 .fifth .row {
