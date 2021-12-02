@@ -1,0 +1,647 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>oilobot</title>
+    <link rel="stylesheet" href="{% static 'css/mainkg/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="nav">
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="{% url 'posts:post' lang='kg' %}">Макалалар</a></li>
+                    <li><a href="{% url 'posts:index' lang='ru' %}">Русский</a></li>
+                </ul>
+                <div class="med">
+                    <img src="{% static 'img/oilobot/med.png' %}" alt="">
+                </div>
+                <div class="link">
+                    <p>"Ойлону сура!" баскычын басуу менен</p>
+                    <div class="links">
+                        <div class="touch">
+                            <a href="https://google.com">колдонуучу келишими</a>
+                        </div>
+                        <span>жана</span>
+                        <div class="link">
+                            <a href="">купуялык саясаты</a>
+                        </div>
+                    </div>
+
+                    <div class="btn">
+                        <a href="">Ойлону сура!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="line">
+    <img src="{% static 'img/lines/2.png' %}" alt="">
+</div>
+
+<section class="first">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title">
+                    <h1>Баарлашуу темалары</h1>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="one">
+                    <div class="left">
+                        <div class="text">
+                            <h4>Ден-соолук</h4>
+                            <p>Симптомдор боюнча ликбез жана рисктерди азайтуу үчүн кеңештер </p>
+                        </div>
+                        <div class="image">
+                            <img src="{% static 'img/smile/smile.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div class="text">
+                            <h4>Мамилелер</h4>
+                            <p>Бири-бирибизди түшүнүп, конфликттерден алыс болуу</p>
+                        </div>
+                        <div class="image">
+                            <img src="{% static 'img/smile/hearteyes.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div class="text">
+                            <h4>Психология</h4>
+                            <p>Өзүмдү түшүнүп, өзүмө кантип кам көрөм</p>
+                        </div>
+                        <div class="image">
+                            <img src="{% static 'img/smile/wink.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="center">
+                    <img src="{% static 'img/oilobot/writer.png' %}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="two">
+                    <div class="right">
+                        <div class="img">
+                            <img src="{% static 'img/smile/kiss.png' %}" alt="">
+                        </div>
+                        <div class="text">
+                            <h4>Секс</h4>
+                            <p>Даяр экенимди кантип түшүнөм жана эмнелер туура эмес болуп калышы мүмкүн</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="img">
+                            <img src="{% static 'img/smile/hug.png' %}" alt="">
+                        </div>
+                        <div class="text">
+                            <h4>Үй-бүлө</h4>
+                            <p>Кантип ата-энем менен натыйжалуу баарлашып, келечектеги үй-бүлөмдү пландаштырсам болот</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="img">
+                            <img src="{% static 'img/smile/thinking.png' %}" alt="">
+                        </div>
+                        <div class="text">
+                            <h4>Физиология</h4>
+                            <p>Денемдин ден соолугу жана түзүлүшү жөнүндө көбүрөөк билүү</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="line">
+    <img src="{% static 'img/lines/1.png' %}" alt="">
+</div>
+
+<section class="second">
+    <div class="container">
+        <div class="row">
+                <div class="col-lg-12">
+                <div class="title">
+                    <h1>Мен кантип баарлашам?</h1>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="image">
+                    <img src="{% static 'img/oilobot/phone.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="line">
+    <img src="{% static 'img/lines/2.png' %}" alt="">
+</div>
+
+<section class="third">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title">
+<!--                    <h1>Чем я могу помочь?</h1>-->
+                </div>
+            </div>
+            <div class="col-lg-6">
+
+            </div>
+            <div class="col-lg-6">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="fourth">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title">
+                    <h1>Кантип жардам берем алам?</h1>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="img">
+                    <img src="{% static 'img/oilobot/heart.png' %}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="text">
+                    <div class="right">
+                        <div class="img">
+                            <img src="{% static 'img/emoji/chat.png' %}" alt="">
+                        </div>
+                        <div class="words">
+                            <h2>Акысыз жардам берем</h2>
+                            <p>Менин кеңештерим толугу менен акысыз. Сен болсо акчаңды сага жагымдуу же керектүү нерсеге жумшай аласың.</p>
+                        </div>
+                    </div>
+                    <div class="clock">
+                        <div class="img">
+                            <img src="{% static 'img/emoji/clock.png' %}" alt="">
+                        </div>
+                        <div class="words">
+                            <h2>Тез жооп берем</h2>
+                            <p>Суроо пайда болгондо же кеңеш керек болгондо жакындарың ар дайым жаныңда боло бербейт. Мен болсо каалаган убакта жардам берүүгө даярмын - жөн гана мага билдирүү жөнөт.</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="img">
+                            <img src="{% static 'img/emoji/secret.png' %}" alt="">
+                        </div>
+                        <div class="words">
+                            <h2>Эч кимге айтпайм</h2>
+                            <p>Мен сенин ишенимиңди абдан баалайм, ошондуктан диалогдун аягында каттарды жашыруу максатында өчүрүү мүмкүнчүлүгү жөнүндө эскертем.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="fifth">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="learn">
+                    <h1>Мен тынымсыз үйрөнөм</h1>
+                    <p>Мени менен сүйлөшүү менен сен менин жакшы болушума жардам бересиң.</p>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="image">
+                    <img src="{% static 'img/oilobot/reader.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sixth">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title">
+                    <h1>Биздин баарлашуу экөөбүздүн арабызда гана!</h1>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="cart">
+                    <div class="image">
+                        <img src="{% static 'img/emoji/incognito.png' %}" alt="">
+                    </div>
+                    <h4>Анонимдүүлүк</h4>
+                    <p>Окуп үйрөнүү үчүн мен түшүнбөгөн айрым диалогдорду колдоном. Бул учурда мен жазышууну автоматтык түрдө анонимдештирип, андан кийин гана сактайм. Ошентип, маектештерим жөнүндө маалыматты иштеп чыгуучулардан дагы коопсуз түрдө жашырам.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="cart">
+                    <div class="image">
+                        <img src="{% static 'img/emoji/safety.png' %}" alt="">
+                    </div>
+                    <h4>Коопсуздук</h4>
+                    <p>Мен TLS шифрлөөнү колдонуп, коопсуз канал аркылуу байланышам, жана диалог аяктагандан кийин аны чатта жок кылууну сунуштайм. Диалогду баштоо үчүн баракчага жазылуунун же топко кошулуунун кажети жок, биздин кат алышуубуздун фактысы коомдук мейкиндикте эч кандай чагылдырылбайт.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="line">
+    <img src="{% static 'img/lines/3.png' %}" alt="">
+</div>
+
+<section class="seventh">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title">
+                    <h1>Менин эксперттерим!</h1>
+                    <p>Мени иштеп чыгууга катышкан адистер тобу</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="man">
+                    <div class="image">
+                        <img src="{% static 'img/experts/6.png' %}" alt="">
+                    </div>
+                    <h4>Тынчтык Бакытов</h4>
+                    <p>Балдар психологу, </p>
+                    <p>жаштар менен иштөө боюнча эксперт</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="man">
+                    <div class="image">
+                        <img src="{% static 'img/experts/3.png' %}" alt="">
+                    </div>
+                    <h4>Нурбек Монолов</h4>
+                    <p>Уролог,</p>
+                    <p>медицина илимдеринин кандидаты</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="man">
+                    <div class="image">
+                        <img src="{% static 'img/experts/2.png' %}" alt="">
+                    </div>
+                    <h4>Айканыш Эралиева</h4>
+                    <p>Сексолог,</p>
+                    <p>Чпок-Чпок негиздөөчүсү</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="man">
+                    <div class="image">
+                        <img src="{% static 'img/experts/8.png' %}" alt="">
+                    </div>
+                    <h4>Алев Мамытова</h4>
+                    <p>“Прецедент”</p>
+                    <p>Партнёрдук группасынын юристи</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="man">
+                    <div class="image">
+                        <img src="{% static 'img/experts/4.png' %}" alt="">
+                    </div>
+                    <h4>Светлана Коздрович </h4>
+                    <p>Гинеколог, </p>
+                    <p>«АРЗ» КБнин клиникалык жетекчиси</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="man">
+                    <div class="image">
+                        <img src="{% static 'img/experts/5.png' %}" alt="">
+                    </div>
+                    <h4>Жамиля Усупова</h4>
+                    <p>Гинеколог,</p>
+                    <p>РДСЧБ директорунун орун басары</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="man">
+                    <div class="image">
+                        <img src="{% static 'img/experts/7.png' %}" alt="">
+                    </div>
+                    <h4>Адинай Жапаралиева</h4>
+                    <p>Психолог,</p>
+                    <p>“Шанс” кризистик борборунун адиси</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="man">
+                    <div class="image">
+                        <img src="{% static 'img/experts/9.png' %}" alt="">
+                    </div>
+                    <h4>Бердибек Алаков</h4>
+                    <p>Дискриминация кылбоо</p>
+                    <p>жана СОГИ боюнча эксперт</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="line">
+    <img src="{% static 'img/lines/4.png' %}" alt="">
+</div>
+
+<div class="eight" id="faq">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title">
+                    <h1>FAQ</h1>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="think">
+                    <div class="img">
+                        <img src="{% static 'img/oilobot/think.png' %}" alt="">
+                    </div>
+                    <div class="button">
+                        <p>Появился вопрос о работе Ойло? <br/> <a href="https://forms.gle/GjT6YhBwYTaf9jwDA" target="_blank">Задать вопрос</a> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 faqSec">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <ul>
+                                        <li>Ойло чат-боту ким үчүн жасалган?</li>
+                                    </ul>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                Ойло жаңы гана бойго жетип келаткан өспүрүмдөргө да, мамилелер жана ден соолук жөнүндө көбүрөөк билгиси келген чоңдор үчүн да суроолорго жооп табууга жардам берет деп ишенебиз.
+                                Жаштар бул мезгилде болуп жаткан өзгөрүүлөрү, алгачкы мамилелери, анын ичинде сексуалдык мамилелер тууралуу суроолорго жооп таба алышат. Ата-энелер менен жеке темаларга конструктивдүү баарлашууну жана чыр-чатактарды болтурбоону үйрөнүшөт. Өзүлөрүнүн укуктары жана милдеттери жөнүндө көбүрөөк маалымат алып, оор кырдаалда жардамды кайдан ала аларын билишет.
+                                Бойго жеткен колдонуучулар сексуалдык жана репродуктивдүү ден-соолукка жана психологиялык саламатыкка болгон мамилесин кайра карап чыгып, мамилелердеги көйгөйлөр жана үй-бүлөнү пландаштыруу боюнча суроолорду бере алышат.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <ul>
+                                        <li>Чат-бот эффективдүүбү?</li>
+                                    </ul>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                Бир катар эл аралык уюмдар, анын ичинде ЮНЕСКО, ден соолук жана саламаттык тармагында билим берүүгө комплекстүү мамилени эң натыйжалуу көрүшөт. Бул ыкма сексуалдык жана репродуктивдүү ден соолук (анатомия, контрацепция) менен түздөн-түз байланышкан темаларды жана мамилелердин этикасы жана алардын эмоционалдык жагы (макулдук, зордук-зомбулук, чечим кабыл алуу) жөнүндө суроолорду камтыйт.
+                                Көп жылдык изилдөөлөргө ылайык, ден соолук боюнча билим берүү адамдарга чоңойгонго даяр болууга жана алган билими, баалуулуктары, эмоцияларды жана сезимдерди жакшыраак түшүнүү жана өзүнө болгон ишеним аркасынан күчтүү жана маңыздуу мамилелерди түзүүгө жардам берет.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <ul>
+                                        <li>Ойло үчүн темалар кантип тандалган?</li>
+                                    </ul>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                Ойло менен баарлашуу үчүн ден соолук, мамилелер, психология, сексуалдуулук, үй-бүлө жана физиология аттуу негизги темаларды тандоону төмөнкү факторлор аныктаган.
+                                Биринчиден, бул ЮНЕСКОнун жана БУУнун башка агенттиктеринин методологиялык материалдарынан алынган изилдөө маалыматтары жана сунуштары. Экинчиден, бул жаштар үчүн болгон ресурстарды, бул ресурстар боюнча берилген суроолордун жыштыгын жана темаларын талдоо. Үчүнчүдөн, бул ЮНЕСКОнун адистеринин жаштар менен иштөө тажрыйбасы. Төртүнчүдөн, бул долбоордун ыктыярчы-активисттер коому менен консультациялар.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <ul>
+                                        <li>Чат-бот кайсы платформаларда жашайт?</li>
+                                    </ul>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="card-body">
+                                Ойло менен Телеграм мессенджеринде жөн гана ага "Салам" деп жазып сүйлөшө аласыңар. Ал үчүн баракчага жазылуунун же топко кошулуунун кажети жок, силердин кат алышуу фактысы коомдук мейкиндикте эч кандай чагылдырылбайт. Эгерде силерди Ойло иштеген темалар боюнча кошумча материалдар, тесттер, сурамжылоолор, ошондой эле жаңыртуулар тууралуу жаңылыктар кызыктырса, Инстаграм социалдык тармагындагы Ойлонун баракчасына жазылууну сунуштайбыз!
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <ul>
+                                        <li>Будут ли добавляться новые материалы?</li>
+                                    </ul>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                            <div class="card-body">
+                                Да, база знаний Ойло будет регулярно пополняться новыми ответами на основе часто задаваемых вопросов в социальных сетях, анализа диалогов пользователей с ботом и предложений наших экспертов.
+                                Каждый новый ответ должен будет пройти через проверку источников и валидацию экспертов, что занимает некоторое время. Поэтому обновления будут регулярными, но не ежедневными.
+                                Текущие материалы также могут обновляться на основе новых данных.                            </div>
+                        </div>
+                    </div> -->
+                    <div class="card">
+                        <div class="card-header" id="headingEight">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    <ul>
+                                        <li>Жаңы маалымат кошулабы?</li>
+                                    </ul>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                            <div class="card-body">
+                                Ооба, Ойло билим базасы социалдык тармактарда көп берилүүчү суроолордун, колдонуучулардын бот менен болгон диалогдорунун анализинин жана биздин эксперттердин сунуштарынын негизинде жаңы жооптор менен үзгүлтүксүз жаңыланып турат.
+                                Ар бир жаңы жооп текшерүүдөн жана эксперттик валидациядан өтүшү керек, бул бир аз убакытты талап кылат. Ошондуктан, жаңыртуулар үзгүлтүксүз болот, бирок күн сайын эмес.
+                                Учурдагы материалдар да жаңы маалыматтардын негизинде жаңыртылышы мүмкүн.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    <ul>
+                                        <li>Ойло ботун колдонуу үчүн курактык чектөөлөр барбы?</li>
+                                    </ul>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                            <div class="card-body">
+                                Ойло Телеграм мессенджеринде жеткиликтүү болгондуктан, курактык чектөөлөр мессенжерде катталуу эрежелери менен чектелген. Силер Телеграмда өз аккаунтуңарды 12 жаштан баштап түзүп, Ойло менен баарлаша баштасаңар болот. Курактык чектөөлөр бар материалдарга (популярдуу илимий макалалар, китептер, лекциялар) кайрылганда, Ойло тиешелүү маалымат белгилерин коёт.                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingSeven">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    <ul>
+                                        <li>Ойло үчүн жоопторду ким жазат?</li>
+                                    </ul>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                            <div class="card-body">
+                                Суроолорго жооптор редакциялык топ жана, дарыгерлер жана психологдордон турган, адистер тобу тарабынан жазылат. Жооптордун маалымат базасын түзүүдө ЮНЕСКОнун, ДСУнун жана БУУнун башка агенттиктеринин сексуалдык ден соолук жана психологиялык саламаттык боюнча изилдөө материалдары, жаштарга ылайыктуу илимий-популярдуу жана билим берүү ресурстары, эксперттик басылмалар колдонулат.
+                                Ошондой эле, Ойлону жаратууда, анын жандуу жана актуалдуу болушуна жардам берген илимий журналисттер жана блоггерлерден турган ыктыярчылардын коомчулугу катышат.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingSeven">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    <ul>
+                                        <li>Ойло кантип үйрөнөт?</li>
+                                    </ul>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                            <div class="card-body">
+                                Ойло - бул маалымдама эмес,ойло жасалма интеллект. Ал баладай үйрөнөт. Дарыгерлер жана психологдор аны суроолор жана тиешелүү темалар менен тааныштырышат. Ошентип, Ойло теманы биринин артынан бири өздөштүрүп жатат. Oilo үчүн эң кыйыны – бул баскычты басуу менен тандалган суроону эмес, колдонуучу ага жазган суроону түшүнүү. Ойло баладай болуп, дароо жооп бере албаса да, биринчи жолу суроолордун текстин акырындык менен өздөштүрүп, иштеп чыгат. Oilo бул диалогдорду окутуу үчүн сактайт, бирок алгач ал диалогдон колдонуучунун атын жана колдонуучунун идентификаторун бөлүп, аларды анонимдейт. Ошентип, Ойло маектештери тууралуу маалыматты иштеп чыгуучулардан да жашырат                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingNine">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    <ul>
+                                        <li>Эмне үчүн чат-бот форматы тандалды?</li>
+                                    </ul>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                            <div class="card-body">
+                                Нейрондук тармактарды колдонуу билим берүүнүн эффективдүү тенденцияларынын бири болуп саналат. Бул ден соолук жана саламаттык билим берүүгө да тиешелүү.
+                                Ар кимдин эле жакын адамы менен сүйлөшүүгө же сапаттуу психологиялык колдоо кызматына кайрылууга мүмкүнчүлүгү боло бербейт. Балким, мындай учурларда бот менен кат алышуу ыңгайлуу жана коопсуз вариант болуп көрүнөт.
+                                Ойло бир эле учурда жүздөгөн диалогдорду жүргүзө алат, бир эле нерсени жүзүнчү, миңинчи жолу кайталоодон тажабайт. Ойло сүйлөшкөндөн баш тартпайт жана сенин каттарыңды эч кимге көрсөтпөйт. Албетте, бот адис менен түздөн-түз баарлашууну алмаштыра албайт, бирок ал көптөгөн маанилүү жана кызыктуу суроолорго жооп бере алат.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!--                <div class="app">-->
+<!--                    <div class="chat">-->
+<!--                        <img src="./../img/emoji/chat.png" alt="">-->
+<!--                    </div>-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+<!--                </div>-->
+<!--                <div class="app">-->
+<!--                    <div class="chat">-->
+<!--                        <img src="./../img/emoji/chat.png" alt="">-->
+<!--                    </div>-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+<!--                </div>-->
+<!--                <div class="app">-->
+<!--                    <div class="chat">-->
+<!--                        <img src="./../img/emoji/chat.png" alt="">-->
+<!--                    </div>-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+<!--                </div>-->
+<!--                <div class="app">-->
+<!--                    <div class="chat">-->
+<!--                        <img src="./../img/emoji/chat.png" alt="">-->
+<!--                    </div>-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="line">
+    <img src="{% static 'img/lines/5.png' %}" alt="">
+</div>
+
+<!--<section class="forms">-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-lg-4">-->
+<!--                <div class="form">-->
+<!--                    <div class="one">-->
+<!--                        <div class="title">-->
+<!--                            <h5>Name</h5>-->
+<!--                        </div>-->
+<!--                        <label><input type="text"></label>-->
+<!--                    </div>-->
+<!--                    <div class="one">-->
+<!--                        <div class="title">-->
+<!--                            <h5>Mail</h5>-->
+<!--                        </div>-->
+<!--                        <label><input type="text"></label>-->
+<!--                    </div>-->
+<!--                    <div class="one">-->
+<!--                        <div class="title">-->
+<!--                            <h5>Comment</h5>-->
+<!--                        </div>-->
+<!--                        <label><input type="text"></label>-->
+<!--                    </div>-->
+<!--                    <button>Sub</button>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title">
+                    <h1>Задай мне свой вопрос и я отвечу <br/> без лишних эмоций</h1>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="image">
+                    <img src="{% static 'img/oilobot/med.png' %}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="img">
+                    <img src="{% static 'img/lines/my.png' %}" alt="">
+                </div>
+            </div>
+            <div class="text">
+                <p>Чат-ботто колдонулган аталыштар жана анда берилген материалдар кандайдыр бир ѳлкѳнүн, аймактын, шаардын же райондун же алардын башкаруу органдарынын, ошондой эле чек араларынын укуктук макамына байланыштуу иштеп чыгуучулардын ой-пикирин билдирбейт.  Бул чат-боттогу маалыматтар менен пикирлер автордук мүнѳздѳ болуп, иштеп чыгуучулардын расмий позициясына дал келбеши мүмкүн жана аларга бул боюнча эч кандай милдет жүктѳлбѳйт. Ден соолукка байланыштуу маалыматтар чат-бот тарабынан сурап-билүү үчүн гана берилген. Диагностикалоо же дарылоо максатында бул маалыматтарды пайдаланууга болбойт. Бардык медициналык суроолор боюнча дарыгерге кайрылуу зарыл.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

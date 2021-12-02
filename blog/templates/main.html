@@ -1,0 +1,629 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>oilobot</title>
+    <link rel="stylesheet" href="{% static 'css/main/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="nav">
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="{% url 'posts:post' lang='ru' %}">Статьи</a></li>
+                    <li><a href="{% url 'posts:index_kg' %}">Кыргызча</a></li>
+                </ul>
+                <div class="med">
+                    <img src="{% static 'img/oilobot/med.png' %}" alt="">
+                </div>
+                <div class="link">
+                    <p>Нажимая на кнопку «Спросить Ойло!» Вы принимаете</p>
+                    <div class="links">
+                        <div class="touch">
+                            <a href="https://google.com">условия использования</a>
+                        </div>
+                        <span>и</span>
+                        <div class="link">
+                            <a href="">политику конфиденциальности</a>
+                        </div>
+                    </div>
+
+                    <div class="btn">
+                        <a href="">Спросить Ойло</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="line">
+    <img src="{% static 'img/lines/2.png' %}" alt="">
+</div>
+
+<section class="first">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title">
+                    <h1>темы общения</h1>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="one">
+                    <div class="left">
+                        <div class="text">
+                            <h4>Здоровье</h4>
+                            <p>Ликбез по симптомам и советы по снижению рисков</p>
+                        </div>
+                        <div class="image">
+                            <img src="{% static 'img/smile/smile.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div class="text">
+                            <h4>Отношения</h4>
+                            <p>Ликбез по симптомам и советы по снижению рисков</p>
+                        </div>
+                        <div class="image">
+                            <img src="{% static 'img/smile/hearteyes.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div class="text">
+                            <h4>Психология</h4>
+                            <p>Ликбез по симптомам и советы по снижению рисков</p>
+                        </div>
+                        <div class="image">
+                            <img src="{% static '/img/smile/wink.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="center">
+                    <img src="{% static '/img/oilobot/writer.png' %}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="two">
+                    <div class="right">
+                        <div class="img">
+                            <img src="{% static '/img/smile/kiss.png' %}" alt="">
+                        </div>
+                        <div class="text">
+                            <h4>Секс</h4>
+                            <p>Ликбез по симптомам и советы по снижению рисков</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="img">
+                            <img src="{% static '/img/smile/hug.png' %}" alt="">
+                        </div>
+                        <div class="text">
+                            <h4>Семья</h4>
+                            <p>Ликбез по симптомам и советы по снижению рисков</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="img">
+                            <img src="{% static '/img/smile/thinking.png' %}" alt="">
+                        </div>
+                        <div class="text">
+                            <h4>Физиология</h4>
+                            <p>Ликбез по симптомам и советы по снижению рисков</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="line">
+    <img src="{% static 'img/lines/1.png' %}" alt="">
+</div>
+
+<section class="second">
+    <div class="container">
+        <div class="row">
+                <div class="col-lg-12">
+                <div class="title">
+                    <h1>Как я общаюсь?</h1>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="image">
+                    <img src="{% static 'img/oilobot/phone.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="line">
+    <img src="{% static 'img/lines/2.png' %}" alt="">
+</div>
+
+<section class="third">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title">
+<!--                    <h1>Чем я могу помочь?</h1>-->
+                </div>
+            </div>
+            <div class="col-lg-6">
+
+            </div>
+            <div class="col-lg-6">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="fourth">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title">
+                    <h1>Чем я могу помочь?</h1>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="img">
+                    <img src="{% static 'img/oilobot/heart.png' %}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="text">
+                    <div class="right">
+                        <div class="img">
+                            <img src="{% static 'img/emoji/chat.png' %}" alt="">
+                        </div>
+                        <div class="words">
+                            <h2>Помогаю бесплатно</h2>
+                            <p>Я отвечаю и даю рекомендации совершенно бесплатно. А ты можешь потратить свои деньги на что-нибудь приятное или нужное.</p>
+                        </div>
+                    </div>
+                    <div class="clock">
+                        <div class="img">
+                            <img src="{% static 'img/emoji/clock.png' %}" alt="">
+                        </div>
+                        <div class="words">
+                            <h2>Отвечаю немедленно</h2>
+                            <p>Близкие не всегда рядом, когда возникает вопрос или нужен совет. Я же готов прийти на помощь в любое время — просто напиши мне.</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="img">
+                            <img src="{% static 'img/emoji/secret.png' %}" alt="">
+                        </div>
+                        <div class="words">
+                            <h2>Никому не рассказываю</h2>
+                            <p>Я очень ценю твое доверие и поэтому в конце диалога напомню тебе о возможности стереть нашу переписку, чтобы сохранить ее в тайне.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="fifth">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="learn">
+                    <h1>Я постоянно учусь</h1>
+                    <p>Поговорив со мной, ты поможешь мне стать лучше.</p>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="image">
+                    <img src="{% static 'img/oilobot/reader.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sixth">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title">
+                    <h1>Общение только между нами!</h1>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="cart">
+                    <div class="image">
+                        <img src="{% static 'img/emoji/incognito.png' %}" alt="">
+                    </div>
+                    <h4>Анонимность</h4>
+                    <p>Для обучения я использую некоторые из тех диалогов, в которых у меня возникли проблемы понимания. В этом случае я автоматически анонимизирую переписку и только потом сохраняю её. Таким образом я надёжно скрываю информацию о своих собеседниках даже от своих разработчиков.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="cart">
+                    <div class="image">
+                        <img src="{% static 'img/emoji/safety.png' %}" alt="">
+                    </div>
+                    <h4>Безопасность</h4>
+                    <p>Я не только общаюсь по защищённому каналу с использованием шифрования TLS, но и по завершению диалога предлагаю удалить его в чате. Чтобы начать диалог тебе не обязательно подписываться на страницу или вступать в группу, факт нашей переписки никак не отразится в публичном пространстве.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="line">
+    <img src="{% static 'img/lines/3.png' %}" alt="">
+</div>
+
+<section class="seventh">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title">
+                    <h1>Знакомься, мои эксперты!</h1>
+                    <p>Команда специалистов, которые участвовали в моем создании</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="man">
+                    <div class="image">
+                        <img src="{% static 'img/experts/6.png' %}" alt="">
+                    </div>
+                    <h4>Тынчтык Бакытов</h4>
+                    <p>Детский психолог</p>
+                    <p>Эксперт по вовлечению молодежи</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="man">
+                    <div class="image">
+                        <img src="{% static 'img/experts/3.png' %}" alt="">
+                    </div>
+                    <h4>Нурбек Монолов</h4>
+                    <p>Уролог</p>
+                    <p>Кандидат медицинских наук</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="man">
+                    <div class="image">
+                        <img src="{% static 'img/experts/2.png' %}" alt="">
+                    </div>
+                    <h4>Айканыш Эралиева</h4>
+                    <p>Сексологиня</p>
+                    <p>основательница Чпок-Чпока</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="man">
+                    <div class="image">
+                        <img src="{% static 'img/experts/8.png' %}" alt="">
+                    </div>
+                    <h4>Алев Мамытова</h4>
+                    <p>Юристка Партнёрской группы</p>
+                    <p>“Прецедент”</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="man">
+                    <div class="image">
+                        <img src="{% static 'img/experts/4.png' %}" alt="">
+                    </div>
+                    <h4>Светлана Коздрович </h4>
+                    <p>Гинекологиня</p>
+                    <p>клиническая руководительница ОО «АРЗ»</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="man">
+                    <div class="image">
+                        <img src="{% static 'img/experts/5.png' %}" alt="">
+                    </div>
+                    <h4>Жамиля Усупова</h4>
+                    <p>Гинекологиня</p>
+                    <p>заместительница директора РЦУЗ</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="man">
+                    <div class="image">
+                        <img src="{% static 'img/experts/7.png' %}" alt="">
+                    </div>
+                    <h4>Адинай Жапаралиева</h4>
+                    <p>Психологиня</p>
+                    <p>специалистка кризисного центра “Шанс”</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="man">
+                    <div class="image">
+                        <img src="{% static 'img/experts/9.png' %}" alt="">
+                    </div>
+                    <h4>Бердибек Алаков</h4>
+                    <p>Эксперт</p>
+                    <p>по недискриминации и СОГИ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="line">
+    <img src="{% static 'img/lines/4.png' %}" alt="">
+</div>
+
+<div class="eight" id="faq">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title">
+                    <h1>FAQ</h1>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="think">
+                    <div class="img">
+                        <img src="{% static 'img/oilobot/think.png' %}" alt="">
+                    </div>
+                    <div class="button">
+                        <p>Появился вопрос о работе Ойло? <br/> <a href="https://forms.gle/GjT6YhBwYTaf9jwDA" target="_blank">Задать вопрос</a> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 faqSec">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <ul>
+                                        <li>Для кого сделан чат-бот Ойло?</li>
+                                    </ul>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                Мы надеемся, что Ойло поможет найти ответы на вопросы как тем, кто только вступает во взрослую жизнь, так и уже взрослым людям, которые хотят узнать больше об отношениях и здоровье.
+                                Молодые люди смогут получить ответы на вопросы о переменах, которые происходят в этот период, о первых отношениях, в том числе, сексуальных. Поговорить о том, как конструктивно общаться с родителями на личные темы и избегать конфликтов. Узнать больше о своих правах и ответственности, выяснить, где можно получить помощь в сложной ситуации.
+                                Пользователи постарше смогут переосмыслить свой подход к сексуальному и репродуктивному здоровью и психологическому благополучию, задать вопросы о проблемах в отношениях и о планировании семьи.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <ul>
+                                        <li>Эффективен ли чат-бот?</li>
+                                    </ul>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                Ряд международных организаций, в том числе и ЮНЕСКО считают наиболее эффективным комплексный подход к образованию в области здоровья и благополучия. Такой подход предполагает как обращение к темам, связанным непосредственно с сексуальным и репродуктивным здоровьем (анатомия, контрацепция), так и к вопросам об этике отношений и их эмоциональной стороне (согласие, насилие, принятие решений). Вопросы осведомленности о рисках, отношения к собственному и чужому здоровью, доверия между партнерами, самооценки, готовности брать на себя ответственность, выражать согласие и несогласие — тесно переплетены между собой и в комплексе влияют на принятие решений.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <ul>
+                                        <li>Как выбирали темы для Ойло?</li>
+                                    </ul>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                Выбор основных тем для общения с Ойло – здоровье, отношения, психология, сексуальность, семья и физиология – определили следующие факторы.
+                                Во-первых, это данные исследований и рекомендации из методических материалов ЮНЕСКО и других агентств ООН. Во-вторых, это анализ уже существующих ресурсов для молодежи, частота и тематика вопросов, задаваемых на этих ресурсах. В-третьих, это опыт экспертов ЮНЕСКО, работающих с молодежью. И, в-четвёртых, это консультации с сообществом волонтеров-активистов, возникшим вокруг данного проекта.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <ul>
+                                        <li>На каких площадках живёт чат-бот?</li>
+                                    </ul>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="card-body">
+                                С Ойло можно поговорить в чате Телеграм, просто написав ему “Привет”. Для этого не обязательно подписываться на страницу или вступать в группу, факт вашей переписки никак не отразится в публичном пространстве. Если же тебе интересны дополнительные материалы по темам, с которыми работает Ойло, тесты, опросы, а также новости об обновлениях — советуем подписаться на страницу Ойло в социальной сети Инстаграм и оставаться с нами!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <ul>
+                                        <li>Будут ли добавляться новые материалы?</li>
+                                    </ul>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                            <div class="card-body">
+                                Да, база знаний Ойло будет регулярно пополняться новыми ответами на основе часто задаваемых вопросов в социальных сетях, анализа диалогов пользователей с ботом и предложений наших экспертов.
+                                Каждый новый ответ должен будет пройти через проверку источников и валидацию экспертов, что занимает некоторое время. Поэтому обновления будут регулярными, но не ежедневными.
+                                Текущие материалы также могут обновляться на основе новых данных.                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    <ul>
+                                        <li>Есть ли возрастные ограничения для Ойло?</li>
+                                    </ul>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                            <div class="card-body">
+                                Поскольку Ойло доступен в мессенджере Телеграм, возрастные ограничения сводятся к правилам регистрации в мессенджере. Завести свой аккаунт в Телеграм и начать общение с Ойло можно с 12 лет. При ссылках на материалы с возрастными ограничениями (научно-популярные статьи, книги, лекции) Ойло ставит соответствующие информационные пометки.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingSeven">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    <ul>
+                                        <li>Кто пишет ответы для Ойло?</li>
+                                    </ul>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                            <div class="card-body">
+                                Ответы на вопросы пишет редакционная группа в сотрудничестве со специалистами: врачами и психологами. При создании базы ответов используются материалы исследований ЮНЕСКО, ВОЗ и других агентств ООН по вопросам сексуального здоровья и психологического благополучия, дружественные к молодежи научно-популярные и просветительские ресурсы, публикации экспертов.
+                                Также в создании Ойло принимает участие сообщество волонтеров: научных журналистов и блогеров, которые помогли сделать проект живым и актуальным.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingEight">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    <ul>
+                                        <li>Как происходит обучение Ойло?</li>
+                                    </ul>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                            <div class="card-body">
+                                Ойло — не справочник, а искусственный интеллект. Обучается он как ребёнок. Врачи и психологи знакомят его с вопросами и соответствующими темами. Так Ойло осваивает одну тему за другой. Самое сложное для Ойло — понять вопрос, написанный ему пользователем, а не выбранный нажатием кнопки. Как и ребёнок, Ойло постепенно усваивает и обрабатывает впервые встретившиеся формулировки вопросов, даже тогда, когда не сразу может ответить на них. Ойло сохраняет такие диалоги для обучения, но сначала он анонимизирует их, отделяя имя и ID пользователя от диалога. Таким образом Ойло скрывает информацию о своих собеседниках даже от своих разработчиков.                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingNine">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    <ul>
+                                        <li>Почему был выбран формат чат-бота?</li>
+                                    </ul>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                            <div class="card-body">
+                                Использование нейросетей — это один из эффективных образовательных трендов. Это касается и образования в области здоровья и благополучия.
+                                Не у каждого есть возможность поговорить с кем-то из близких или обратиться в качественную службу психологической поддержки. Возможно, в таких случаях переписка с ботом покажется более удобной и безопасной опцией.
+                                Ойло может вести сотни диалогов одновременно, и он не устанет повторять одно и то же в сотый и в тысячный раз. Ойло не откажется разговаривать и никому не перескажет ваш разговор. Конечно, бот не сможет заменить общение с живым специалистом, но он может дать ответы на многие важные и волнующие вопросы.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!--                <div class="app">-->
+<!--                    <div class="chat">-->
+<!--                        <img src="./../img/emoji/chat.png" alt="">-->
+<!--                    </div>-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+<!--                </div>-->
+<!--                <div class="app">-->
+<!--                    <div class="chat">-->
+<!--                        <img src="./../img/emoji/chat.png" alt="">-->
+<!--                    </div>-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+<!--                </div>-->
+<!--                <div class="app">-->
+<!--                    <div class="chat">-->
+<!--                        <img src="./../img/emoji/chat.png" alt="">-->
+<!--                    </div>-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+<!--                </div>-->
+<!--                <div class="app">-->
+<!--                    <div class="chat">-->
+<!--                        <img src="./../img/emoji/chat.png" alt="">-->
+<!--                    </div>-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="line">
+    <img src="{% static 'img/lines/5.png' %}" alt="">
+</div>
+
+<!--<section class="forms">-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-lg-4">-->
+<!--                <div class="form">-->
+<!--                    <div class="one">-->
+<!--                        <div class="title">-->
+<!--                            <h5>Name</h5>-->
+<!--                        </div>-->
+<!--                        <label><input type="text"></label>-->
+<!--                    </div>-->
+<!--                    <div class="one">-->
+<!--                        <div class="title">-->
+<!--                            <h5>Mail</h5>-->
+<!--                        </div>-->
+<!--                        <label><input type="text"></label>-->
+<!--                    </div>-->
+<!--                    <div class="one">-->
+<!--                        <div class="title">-->
+<!--                            <h5>Comment</h5>-->
+<!--                        </div>-->
+<!--                        <label><input type="text"></label>-->
+<!--                    </div>-->
+<!--                    <button>Sub</button>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title">
+                    <h1>Задай мне свой вопрос и я отвечу <br/> без лишних эмоций</h1>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="image">
+                    <img src="{% static 'img/oilobot/med.png' %}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="img">
+                    <img src="{% static 'img/lines/my.png' %}" alt="">
+                </div>
+            </div>
+            <div class="text">
+                <p>Названия, использованные в данном чат-боте, и представленные в нем материалы не являются выражением мнения разработчиков относительно правового статуса какой-либо страны, территории, города или района или их соответствующих органов управления, равно как и линий разграничения или границ. Сведения и мнения, содержащиеся в данном чат-боте, являются авторскими, могут не совпадать с официальной позицией разработчиков и не накладывают на них никаких обязательств. Информация по вопросам, связанным со здоровьем, предоставляется чат-ботом только в качестве справки. На нее нельзя полагаться в целях диагностики или лечения. По любым медицинским вопросам необходимо обращаться к врачу.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

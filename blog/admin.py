@@ -3,9 +3,9 @@ from .models import Post, Category, Question
 
  
 
-admin.site.register(Category)
+# admin.site.register(Category)
 
-admin.site.register(Question)
+# admin.site.register(Question)
 
 
 @admin.register(Post)

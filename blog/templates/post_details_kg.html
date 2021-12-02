@@ -3,45 +3,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="https://elibot.info/img/logo.png" />
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Oilobot</title>
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/style_quil.css' %}">
-    <link rel="stylesheet" href="{% static 'css/style_cat.css' %}">
-    <link rel="stylesheet" href="{% static 'css/post_details.css' %}">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>oilobot</title>
+    <link rel="stylesheet" href="{% static '/css/posts/style.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 <body>
 <header>
     <div class="container">
-        <div class="top">
-            <div class="logo">
-                <div class="img">
-                    <a href="/ru"><img src="https://elibot.info/img/logo.png" alt=""></a>
-                </div>
-                <div class="logotype">
-                    <h1>Oilobot робот</h1>
-                    <p>Сенин жеке консультантың</p>
-                </div>
-            </div>
-            <div class="links">
-                <ul>
-                    <li><a href="/questions/kg">Көп берилүүчү суроолор</a></li>
-                    <li><a href="/category/kg">Макала</a></li>
-                    <li><a href="/post_details/{{post.id}}/ru">Русский</a></li>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="nav">
+                    <li><a href="{% url 'posts:index_kg' %}">Башкы бет</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="{% url 'posts:post' lang='kg' %}">Макалалар</a></li>
+                    <li><a href="{% url 'posts:post_details' post_id=post.slug_id lang='ru' %}">Русский</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </header>
-        <br>
-        <br>
+<section class="carts">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title">
+                    <h1>{{post.title_kg}}</h1>
+                </div>
+            </div>
             <div id="wrap">
                 <div class="container">
                         <div class="card">
@@ -53,63 +45,8 @@
                         </div>
                     </div>
                 </div>
-        <br>
-        <br>  
-
-<footer>
-    <div class="container">
-        <div class="link">
-            <p>«Oilobot'ту суроо!» кнопканы басканда , сиз<a href="#"> Колдонуу шарттарды кабыл аласыңар</a></p>
-            <a class="elly" href="#">Oilobot'ту суроо!</a>
-        </div>
-        <div class="top">
-            <div class="logo">
-                <div class="img">
-                    <img src="https://elibot.info/img/logo.png" alt="">
-                </div>
-                <div class="logotype">
-                    <h1>Oilobot робот</h1>
-                    <p>Сенин жеке консультантың</p>
-                </div>
-            </div>
-            <div class="question">
-                <p>Oilobot жонундо суроо болсо, Ага суроо берсең болот.</p>
-            </div>
-            <div class="links">
-                <div class="left">
-                    <a href="#">Ask question</a>
-                </div>
-                <div class="right">
-                    <a href="#">FAQ</a>
-                </div>
-            </div>
-        </div>
-        <div class="middle">
-            <div class="topEl">
-                <div class="proto">
-                    <h6>Oilobot спонсорлору</h6>
-                    <div class="photo">
-                        <img src="{% static 'logo/my.png' %}" alt="">
-                    </div>
-                </div>
-                <div class="text">
-                    <p>Ушул чат-ботто колдонулган аталыштар жана анда келтирилген материалдар ЮНЕСКОнун кайсы бир өлкөнүн, аймактын, шаардын же региондун же алардын тийиштүү органдарынын укуктук статусуна, ошондой эле демаркация чектерине же чек араларына байланыштуу пикирин билдирбейт. Ушул чат-боттогу маалымат жана пикирлер автордук укукка ээ жана ЮНЕСКОнун расмий позициясы менен дал келбеши мүмкүн жана Уюмга кандайдыр бир милдеттенмелерди жүктөбөйт. Ден-соолукка байланыштуу көйгөйлөр жөнүндө маалымат chatbot тарабынан маалымдама үчүн гана берилет. Диагноз коюу же дарылоо үчүн ага ишенбөө керек. Бардык медициналык суроолор боюнча, доктурга кайрылуу керек.</p>
-                </div>
-            </div>
-            <div class="links1">
-                <div class="first">
-                    <a href="#">Купуялык саясаты</a>
-                </div>
-                <div class="second">
-                    <a href="#">Пайдалануу шарттары</a>
-                </div>
-            </div>
-        </div>
-        <div class="bottom">
-            <p>Copyright © 2020     Бардык укуктар корголгон. Материалдарды толук же жарым-жартылай көчүрүүгө тыюу салынат.</p>
-            <p>Made in here</p>
         </div>
     </div>
-</footer>
+</section>
 </body>
 </html>
