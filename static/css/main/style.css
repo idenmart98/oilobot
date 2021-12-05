@@ -7,6 +7,7 @@
 header{
     background-image: url("/static/img/fon/fonFirst.png");
     background-size: cover;
+    background-position: center;
 }
 header .nav{
     display: flex;
@@ -196,7 +197,7 @@ header .link .btn a{
 }
 
 .eight {
-    /*background-image: url('{% static 'img/fon/eight.png.jpg' %}');*/
+    /*background-image: url("./../img/fon/eight.png");*/
     background-size: cover;
     position: static;
     width: 100%;
@@ -226,6 +227,7 @@ header .link .btn a{
 footer{
     background-image: url("/static/img/fon/footer.png");
     background-size: cover;
+    background-position: center;
 }
 footer .title h1{
     text-align: center;
@@ -315,4 +317,8 @@ footer .link a{
 }
 .eight .button{
     padding-top: 30px;
+}
+
+#faq {
+    margin-bottom: 0;
 }

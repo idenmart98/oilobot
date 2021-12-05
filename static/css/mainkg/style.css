@@ -20,7 +20,6 @@ header .nav li{
 header .nav li a{
     text-decoration: none;
     color: aliceblue;
-    outline: none;
 }
 header .nav li a:hover{
     color: #00daff;
@@ -28,18 +27,12 @@ header .nav li a:hover{
 header .med{
     text-align: center;
 }
-header .links {
-    display: flex;
-    justify-content: center;
-}
-header .links span{
-    padding: 0 10px;
-}
 header .med img{
     width: 500px;
 }
 header .link {
     text-align: center;
+    padding-top: 30px;
 }
 header .link .btn{
     margin-top: 20px;
@@ -85,13 +78,10 @@ header .link .btn a{
 .second {
     background-image: url("/static/img/fonkg/2kg.png");
     background-size: cover;
-    padding-bottom: 185px;
+    padding-bottom: 125px;
 }
 .second .title{
     text-align: center;
-}
-.second .title h1{
-    font-weight: 600;
 }
 .second .image{
     text-align: right;
@@ -100,9 +90,7 @@ header .link .btn a{
 .second .image img{
     width: 40%;
 }
-.third .title h1{
-    font-weight: 600;
-}
+
 .fourth .row{
     display: flex;
     align-items: center;
@@ -136,9 +124,6 @@ header .link .btn a{
     display: flex;
     align-items: center;
 }
-.fifth .image img{
-    width: 100%;
-}
 .fifth .learn{
     text-align: center;
     padding-top: 60px;
@@ -151,15 +136,13 @@ header .link .btn a{
 .sixth .title{
     text-align: center;
 }
-.sixth .title h1{
-    font-weight: 600;
-}
 .sixth .col-lg-6{
     display: flex;
     justify-content: center;
 }
 .sixth .cart{
     padding-top: 80px;
+    text-align: center;
     width: 80%;
 }
 .sixth .cart .image{
@@ -170,7 +153,6 @@ header .link .btn a{
 }
 .sixth .cart h4{
     padding: 30px 0;
-    text-align: center;
 }
 
 .seventh{
@@ -179,14 +161,8 @@ header .link .btn a{
 .seventh .title{
     text-align: center;
 }
-.seventh .title h1{
-    font-weight: 600;
-}
 .seventh .man{
     text-align: center;
-}
-.seventh .man p{
-    margin-bottom: 0;
 }
 .seventh .man .image{
     text-align: center;
@@ -196,16 +172,13 @@ header .link .btn a{
 }
 
 .eight {
-    /*background-image: url("./../img/fon/eight.png");*/
+    background-image: url("/static/img/fon/eight.png");
     background-size: cover;
-    position: static;
-    width: 100%;
-}
-.eight .faqSec{
-    padding-top: 50px;
+    padding-bottom: 125px;
 }
 .eight .row{
     display: flex;
+    align-items: center;
 }
 .eight .app{
     display: flex;
@@ -219,17 +192,13 @@ header .link .btn a{
     font-weight: 600;
 }
 .eight .img img{
-    /*padding-top: 100px;*/
-    width: 400px;
+    padding-top: 100px;
+    width: 60%;
 }
 
 footer{
     background-image: url("/static/img/fonkg/3kg.png");
     background-size: cover;
-}
-footer .title h1{
-    text-align: center;
-    font-weight: 600;
 }
 footer .image{
     text-align: center;
@@ -237,43 +206,13 @@ footer .image{
 }
 footer .img{
     text-align: center;
-    padding:10px 0 10px 0;
+    padding: 200px 0 100px 0;
 }
 footer .img img{
     width: 60%;
 }
-footer .text{
-    padding: 60px;
-}
-footer .text p{
-    color: white;
-    font-weight: 500;
-    text-align: center;
-}
-footer .link {
-    text-align: center;
-    /*padding: 0 60px 40px 0;*/
-}
-footer .link a{
-    color: #fff;
-}
 
 
-.form{
-    border: solid 1px rgba(128, 128, 128, 0.44);
-    border-radius: 10px;
-    padding: 40px 20px;
-}
-.forms .row{
-    display: flex;
-    justify-content: center;
-}
-.forms .form{
-    text-align: center;
-}
-/*.form .forms label{*/
-/*    text-align: center;*/
-/*}*/
 .accordion{
     margin-top: 100px;
 }
@@ -284,35 +223,6 @@ footer .link a{
     text-decoration: none;
 }
 
-
-.eight .card-header {
-    /*padding: .5rem 1rem;*/
-     margin-bottom: 0;
-     background-color: #fff;
-     border-bottom: #fff;
-}
-.eight .btn li:focus {
-    outline: 0;
-    box-shadow: #fff;
-}
-.eight{
-    position: relative;
-}
-.eight img{
-    /*position: absolute;*/
-}
-.eight .card {
-    border: none;
-}
-.card-body{
-    font-size: 14px;
-}
-#faq{
-    margin-bottom: 50px;
-}
-.eight .think{
-    text-align: center;
-}
-.eight .button{
-    padding-top: 30px;
+#faq {
+    margin-bottom: 0;
 }

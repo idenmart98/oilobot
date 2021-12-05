@@ -1,0 +1,208 @@
+@media (max-width: 992px) {
+    .first .text h4{
+        font-size: 20px;
+    }
+    .first .text p{
+        font-size: 14px;
+    }
+    .first .image img{
+        width: 70px;
+    }
+    .first .img img{
+        width: 70px;
+    }
+    .first .center img {
+        margin-top: -15%;
+    }
+    .fourth .text h2{
+        font-size: 26px;
+    }
+    .seventh {
+        padding: 0 0 30px;
+    }
+    .seventh p{
+        font-size: 14px;
+    }
+    footer .image img{
+        width: 350px;
+    }
+}
+
+@media (max-width: 768px){
+    .first .text p {
+        font-size: 12px;
+    }
+    .first .image img {
+        width: 60px;
+    }
+    .first .center img {
+        margin-top: 15%;
+    }
+    .fourth .text h2 {
+        font-size: 18px;
+    }
+    .fourth .text p {
+        font-size: 12px;
+    }
+    .fourth .clock .img img {
+        width: 50px;
+        margin: 0 20px 0 20px;
+    }
+    .fourth .right .img img {
+        width: 50px;
+        margin: 0 20px 0 0;
+    }
+    .fourth .text {
+        padding-top: 30px;
+    }
+    .sixth .cart p{
+        font-size: 12px;
+    }
+    .sixth .cart h4 {
+        padding: 10px 0;
+        font-size: 20px;
+    }
+    .sixth .cart .image img {
+        height: 60px;
+    }
+    .seventh .man h4{
+        font-size: 16px;
+    }
+    .seventh p {
+        font-size: 12px;
+    }
+    .eight .img img {
+        width: 110%;
+    }
+    .eight .card ul{
+        margin-bottom: 0;
+    }
+    .eight .card li{
+        font-size: 14px;
+    }
+    .eight .card-body {
+        font-size: 12px;
+    }
+    .eight .button p{
+        font-size: 15px;
+    }
+    footer .title h1 {
+        font-size: 30px;
+    }
+    footer .text {
+        padding: 30px;
+    }
+    footer .text p{
+        font-size: 12px;
+    }
+    footer .img img {
+        width: 60%;
+    }
+    footer .image img {
+        width: 300px;
+    }
+    footer .image {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    header .nav li a {
+        font-size: 12px;
+    }
+    header .med img{
+        width: 190px;
+    }
+    header .link p{
+        font-size: 12px;
+        color: white;
+    }
+    header .links .touch a{
+        font-size: 12px;
+    }
+    header .links span {
+        font-size: 12px;
+        padding-top: 4px;
+    }
+    header .links .link a{
+        font-size: 12px;
+    }
+    header .link .btn a {
+        padding: 5px 10px;
+        font-size: 12px;
+        color: #fff;
+    }
+    .first .text p {
+        font-size: 9px;
+    }
+    .first .image img {
+        width: 40px;
+    }
+    .first .img img {
+        width: 40px;
+    }
+    .first .text h4 {
+        font-size: 13px;
+    }
+    .first .center img {
+        margin-top: 30%;
+    }
+    .fourth .text h2 {
+        font-size: 14px;
+    }
+    .fourth .text p {
+        font-size: 9px;
+    }
+    .fourth .clock .img img {
+        width: 30px;
+    }
+    .fourth .right .img img {
+        width: 42px;
+        margin: 0 20px 0 0;
+    }
+    .fourth .img img {
+        width: 100%;
+    }
+    .fifth .learn h1{
+        font-size: 20px;
+    }
+    .fifth .learn p {
+        font-size: 10px;
+    }
+    .sixth .cart h4 {
+        padding: 10px 0 0;
+        font-size: 16px;
+    }
+    .sixth .cart {
+        padding-top: 30px;
+        width: 80%;
+    }
+    .seventh .man h4 {
+        font-size: 10px;
+    }
+    .seventh p {
+        font-size: 8px;
+    }
+    .eight .img img{
+        width: 50%;
+    }
+    .eight .faqSec {
+        padding-top: 0;
+    }
+    .third .title h1 {
+        font-size: 24px;
+    }
+    footer .image {
+        margin-top: 0;
+    }
+    footer .image img {
+        width: 200px;
+        padding-top: 60px;
+    }
+    footer .img {
+        padding: 0;
+    }
+    footer .text p {
+        font-size: 8px;
+    }
+}

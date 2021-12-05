@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>oilobot</title>
     <link rel="stylesheet" href="{% static 'css/main/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main/media.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
@@ -28,11 +29,11 @@
                     <p>Нажимая на кнопку «Спросить Ойло!» Вы принимаете</p>
                     <div class="links">
                         <div class="touch">
-                            <a href="https://google.com">условия использования</a>
+                            <a href="{% static 'pdfs/polzov_sog.pdf'%}">условия использования</a>
                         </div>
                         <span>и</span>
                         <div class="link">
-                            <a href="">политику конфиденциальности</a>
+                            <a href="{% static 'pdfs/politika.pdf'%}">политику конфиденциальности</a>
                         </div>
                     </div>
 
@@ -56,7 +57,7 @@
                     <h1>темы общения</h1>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="one">
                     <div class="left">
                         <div class="text">
@@ -70,7 +71,7 @@
                     <div class="left">
                         <div class="text">
                             <h4>Отношения</h4>
-                            <p>Ликбез по симптомам и советы по снижению рисков</p>
+                            <p>Как понять друг друга и избежать конфликтов</p>
                         </div>
                         <div class="image">
                             <img src="{% static 'img/smile/hearteyes.png' %}" alt="">
@@ -79,7 +80,7 @@
                     <div class="left">
                         <div class="text">
                             <h4>Психология</h4>
-                            <p>Ликбез по симптомам и советы по снижению рисков</p>
+                            <p>Как разобраться в себе и позаботиться о себе</p>
                         </div>
                         <div class="image">
                             <img src="{% static '/img/smile/wink.png' %}" alt="">
@@ -87,12 +88,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="center">
                     <img src="{% static '/img/oilobot/writer.png' %}" alt="">
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="two">
                     <div class="right">
                         <div class="img">
@@ -100,7 +101,7 @@
                         </div>
                         <div class="text">
                             <h4>Секс</h4>
-                            <p>Ликбез по симптомам и советы по снижению рисков</p>
+                            <p>Как понять, что ты готов\а и что может пойти не так</p>
                         </div>
                     </div>
                     <div class="right">
@@ -109,7 +110,7 @@
                         </div>
                         <div class="text">
                             <h4>Семья</h4>
-                            <p>Ликбез по симптомам и советы по снижению рисков</p>
+                            <p>Как эффективнее общаться с родителями и планировать свою будущую семью</p>
                         </div>
                     </div>
                     <div class="right">
@@ -118,7 +119,7 @@
                         </div>
                         <div class="text">
                             <h4>Физиология</h4>
-                            <p>Ликбез по симптомам и советы по снижению рисков</p>
+                            <p>Как понять, что твое тело в порядке и узнать больше о его строении</p>
                         </div>
                     </div>
                 </div>
@@ -151,37 +152,37 @@
 </div>
 
 <section class="third">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="title">
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-lg-12">-->
+<!--                <div class="title">-->
 <!--                    <h1>Чем я могу помочь?</h1>-->
-                </div>
-            </div>
-            <div class="col-lg-6">
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-lg-6">-->
 
-            </div>
-            <div class="col-lg-6">
+<!--            </div>-->
+<!--            <div class="col-lg-6">-->
 
-            </div>
-        </div>
-    </div>
-</section>
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 
 <section class="fourth">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="title">
-                    <h1>Чем я могу помочь?</h1>
+                    <h1>Как я помогаю?</h1>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-5 col-md-5 col-sm-5">
                 <div class="img">
                     <img src="{% static 'img/oilobot/heart.png' %}" alt="">
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-7 col-md-7 col-sm-7">
                 <div class="text">
                     <div class="right">
                         <div class="img">
@@ -219,13 +220,13 @@
 <section class="fifth">
     <div class="container">
         <div class="row">
-            <div class="col-lg-7">
+            <div class="col-lg-7 col-md-7 col-sm-7">
                 <div class="learn">
                     <h1>Я постоянно учусь</h1>
                     <p>Поговорив со мной, ты поможешь мне стать лучше.</p>
                 </div>
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-5 col-md-5 col-sm-5">
                 <div class="image">
                     <img src="{% static 'img/oilobot/reader.png' %}" alt="">
                 </div>
@@ -242,7 +243,7 @@
                     <h1>Общение только между нами!</h1>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="cart">
                     <div class="image">
                         <img src="{% static 'img/emoji/incognito.png' %}" alt="">
@@ -251,7 +252,7 @@
                     <p>Для обучения я использую некоторые из тех диалогов, в которых у меня возникли проблемы понимания. В этом случае я автоматически анонимизирую переписку и только потом сохраняю её. Таким образом я надёжно скрываю информацию о своих собеседниках даже от своих разработчиков.</p>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="cart">
                     <div class="image">
                         <img src="{% static 'img/emoji/safety.png' %}" alt="">
@@ -276,7 +277,7 @@
                     <p>Команда специалистов, которые участвовали в моем создании</p>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-3 col-sm-3">
                 <div class="man">
                     <div class="image">
                         <img src="{% static 'img/experts/6.png' %}" alt="">
@@ -286,7 +287,7 @@
                     <p>Эксперт по вовлечению молодежи</p>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-3 col-sm-3">
                 <div class="man">
                     <div class="image">
                         <img src="{% static 'img/experts/3.png' %}" alt="">
@@ -296,7 +297,7 @@
                     <p>Кандидат медицинских наук</p>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-3 col-sm-3"">
                 <div class="man">
                     <div class="image">
                         <img src="{% static 'img/experts/2.png' %}" alt="">
@@ -306,7 +307,7 @@
                     <p>основательница Чпок-Чпока</p>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-3 col-sm-3">
                 <div class="man">
                     <div class="image">
                         <img src="{% static 'img/experts/8.png' %}" alt="">
@@ -316,7 +317,7 @@
                     <p>“Прецедент”</p>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-3 col-sm-3">
                 <div class="man">
                     <div class="image">
                         <img src="{% static 'img/experts/4.png' %}" alt="">
@@ -326,7 +327,7 @@
                     <p>клиническая руководительница ОО «АРЗ»</p>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-3 col-sm-3">
                 <div class="man">
                     <div class="image">
                         <img src="{% static 'img/experts/5.png' %}" alt="">
@@ -336,7 +337,7 @@
                     <p>заместительница директора РЦУЗ</p>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-3 col-sm-3">
                 <div class="man">
                     <div class="image">
                         <img src="{% static 'img/experts/7.png' %}" alt="">
@@ -346,7 +347,7 @@
                     <p>специалистка кризисного центра “Шанс”</p>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-3 col-sm-3">
                 <div class="man">
                     <div class="image">
                         <img src="{% static 'img/experts/9.png' %}" alt="">
@@ -371,7 +372,7 @@
                     <h1>FAQ</h1>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-4 col-sm-12">
                 <div class="think">
                     <div class="img">
                         <img src="{% static 'img/oilobot/think.png' %}" alt="">
@@ -381,7 +382,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 faqSec">
+            <div class="col-lg-6 faqSec  col-md-8 col-sm-12">
                 <div id="accordion">
                     <div class="card">
                         <div class="card-header" id="headingOne">
@@ -620,7 +621,6 @@
         </div>
     </div>
 </footer>
-
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
