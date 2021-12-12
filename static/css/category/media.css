@@ -1,0 +1,35 @@
+@media (max-width: 576px){
+    header .nav li a {
+        font-size: 12px
+    }
+    .carts .title{
+        padding: 20px 0;
+    }
+    .carts .title h1{
+        font-size: 22px;
+    }
+    .carts .link a {
+        font-size: 14px;
+    }
+    .carts .cart {
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding: 0 0 5px;
+    }
+    .carts .cart h4{
+        font-size: 14px;
+        padding: 5px 0 0;
+    }
+}
+@media (max-width: 414px){
+    header .nav li {
+        padding-left: 40px;
+    }
+    .carts .row {
+        display: flex;
+        justify-content: space-between;
+    }
+    .carts .col-xs-6 {
+        width: 50%;
+    }
+}

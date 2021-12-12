@@ -19,7 +19,7 @@
             <div class="col-lg-12">
                 <ul class="nav">
                     <li><a href="#faq">FAQ</a></li>
-                    <li><a href="{% url 'posts:post' lang='ru' %}">Статьи</a></li>
+                    <li><a href="{% url 'posts:category' lang='ru' %}">Статьи</a></li>
                     <li><a href="{% url 'posts:index_kg' %}">Кыргызча</a></li>
                 </ul>
                 <div class="med">
@@ -174,7 +174,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="title">
-                    <h1>Как я помогаю?</h1>
+                    <h1>Чем я могу помочь?</h1>
                 </div>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-5">
@@ -208,7 +208,7 @@
                         </div>
                         <div class="words">
                             <h2>Никому не рассказываю</h2>
-                            <p>Я очень ценю твое доверие и поэтому в конце диалога напомню тебе о возможности стереть нашу переписку, чтобы сохранить ее в тайне.</p>
+                            <p>Я очень ценю твое доверие и поэтому храню нашу переписку в тайне. Если к твоему телефону имеют доступ другие люди, то я советую очищать переписку после каждого нашего разговора.</p>
                         </div>
                     </div>
                 </div>
@@ -277,84 +277,76 @@
                     <p>Команда специалистов, которые участвовали в моем создании</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                 <div class="man">
                     <div class="image">
                         <img src="{% static 'img/experts/6.png' %}" alt="">
                     </div>
-                    <h4>Тынчтык Бакытов</h4>
+                    <h4>Тынчтыкбек Бакытов</h4>
                     <p>Детский психолог</p>
-                    <p>Эксперт по вовлечению молодежи</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                 <div class="man">
                     <div class="image">
                         <img src="{% static 'img/experts/3.png' %}" alt="">
                     </div>
                     <h4>Нурбек Монолов</h4>
                     <p>Уролог</p>
-                    <p>Кандидат медицинских наук</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3"">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                 <div class="man">
                     <div class="image">
                         <img src="{% static 'img/experts/2.png' %}" alt="">
                     </div>
                     <h4>Айканыш Эралиева</h4>
                     <p>Сексологиня</p>
-                    <p>основательница Чпок-Чпока</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                 <div class="man">
                     <div class="image">
                         <img src="{% static 'img/experts/8.png' %}" alt="">
                     </div>
                     <h4>Алев Мамытова</h4>
-                    <p>Юристка Партнёрской группы</p>
-                    <p>“Прецедент”</p>
+                    <p>Юристка</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                 <div class="man">
                     <div class="image">
                         <img src="{% static 'img/experts/4.png' %}" alt="">
                     </div>
                     <h4>Светлана Коздрович </h4>
                     <p>Гинекологиня</p>
-                    <p>клиническая руководительница ОО «АРЗ»</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                 <div class="man">
                     <div class="image">
                         <img src="{% static 'img/experts/5.png' %}" alt="">
                     </div>
                     <h4>Жамиля Усупова</h4>
                     <p>Гинекологиня</p>
-                    <p>заместительница директора РЦУЗ</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                 <div class="man">
                     <div class="image">
                         <img src="{% static 'img/experts/7.png' %}" alt="">
                     </div>
                     <h4>Адинай Жапаралиева</h4>
                     <p>Психологиня</p>
-                    <p>специалистка кризисного центра “Шанс”</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                 <div class="man">
                     <div class="image">
                         <img src="{% static 'img/experts/9.png' %}" alt="">
                     </div>
                     <h4>Бердибек Алаков</h4>
-                    <p>Эксперт</p>
-                    <p>по недискриминации и СОГИ</p>
+                    <p>Эксперт по недискриминации</p>
                 </div>
             </div>
         </div>
@@ -430,7 +422,7 @@
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                             <div class="card-body">
-                                Выбор основных тем для общения с Ойло – здоровье, отношения, психология, сексуальность, семья и физиология – определили следующие факторы.
+                                Выбор основных тем для общения с Ойло – здоровье, отношения, психология, сексуальность, семья и физиология – определили несколько факторов.
                                 Во-первых, это данные исследований и рекомендации из методических материалов ЮНЕСКО и других агентств ООН. Во-вторых, это анализ уже существующих ресурсов для молодежи, частота и тематика вопросов, задаваемых на этих ресурсах. В-третьих, это опыт экспертов ЮНЕСКО, работающих с молодежью. И, в-четвёртых, это консультации с сообществом волонтеров-активистов, возникшим вокруг данного проекта.
                             </div>
                         </div>
@@ -611,8 +603,11 @@
                 </div>
             </div>
             <div class="col-lg-12">
+                <div class="text1">
+                    <p>Чат-бот Ойло разработан при поддержке:</p>
+                </div>
                 <div class="img">
-                    <img src="{% static 'img/lines/my.png' %}" alt="">
+                    <img src="{% static 'img/logo/my.png' %}" alt="">
                 </div>
             </div>
             <div class="text">

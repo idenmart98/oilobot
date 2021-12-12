@@ -206,3 +206,274 @@
         font-size: 8px;
     }
 }
+
+
+@media (max-width: 414px) {
+    header {
+        background-position: right;
+    }
+    header .nav li {
+        padding-left: 20px;
+    }
+    header .med {
+        text-align: left;
+    }
+    header .med img{
+        width: 154px;
+    }
+    header .link p {
+        font-size: 11px;
+        color: #000;
+    }
+    header .links .touch a{
+        font-size: 10px;
+    }
+    header .links .link a{
+        font-size: 10px;
+    }
+    header .link .btn {
+        margin-top: 0;
+    }
+    .first .center {
+        display: none;
+    }
+    .first .one{
+        padding-top: 20px;
+    }
+    .first .two{
+        padding-top: 0;
+    }
+    .first .left{
+        display: flex;
+        justify-content: center;
+    }
+    .first .left .image {
+        display: none;
+    }
+    .first .right{
+        display: flex;
+        justify-content: center;
+    }
+    .first .right .img {
+        display: none;
+    }
+    .second {
+        background-size: cover;
+        background-position: left;
+        padding-bottom: 500px;
+    }
+    .second .image{
+        display: none;
+    }
+    .fourth .img{
+        text-align: center;
+    }
+    .fourth .img img{
+        width: 50%;
+    }
+    .fourth .clock .img img {
+        width: 35px;
+        margin: 0 19px 0 6px;
+    }
+    .fifth .learn {
+        text-align: center;
+        padding-top: 15px;
+    }
+    .fifth .image {
+        text-align: center;
+    }
+    .fifth .image img {
+        width: 50%;
+    }
+    .sixth .cart .image img {
+        height: 50px;
+    }
+    .sixth .cart {
+        padding-top: 10px;
+        width: 90%;
+    }
+    .sixth .cart h4 {
+        padding: 5px 0 0;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .seventh .row{
+        display: flex;
+        justify-content: space-around;
+    }
+    .seventh .col-xs-3 {
+        width: 50%;
+    }
+    .eight .card li {
+        font-size: 11px;
+    }
+    .third .title h1 {
+        font-size: 18px;
+    }
+    footer .image img {
+        width: 160px;
+        padding-top: 0;
+    }
+    footer .image img {
+        width: 160px;
+        padding-top: 20px;
+    }
+    footer .img img {
+        width: 166px;
+    }
+}
+@media (max-width: 414px){
+    .fifth .learn {
+        text-align: center;
+        padding-top: 33px;
+    }
+    .sixth .cart h4 {
+        font-weight: 500;
+    }
+    footer .image img {
+        width: 160px;
+        padding-top: 20px;
+    }
+    footer .img img {
+        width: 166px;
+    }
+    footer .text1{
+        padding-top: 0;
+    }
+    footer .text1 p{
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    footer .img img {
+        width: 270px;
+    }
+    footer .text {
+        padding: 12px 0 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    header {
+        background-position: right;
+    }
+    header .nav li {
+        padding-left: 20px;
+    }
+    header .med {
+        text-align: left;
+    }
+    header .med img{
+        width: 117px;
+    }
+    header .link p {
+        font-size: 11px;
+    }
+    header .links .touch a{
+        font-size: 10px;
+    }
+    header .links .link a{
+        font-size: 10px;
+    }
+    header .link .btn {
+         margin-top: 0;
+    }
+    .first .center {
+        display: none;
+    }
+    .first .one{
+        padding-top: 20px;
+    }
+    .first .two{
+        padding-top: 0;
+    }
+    .first .left{
+        display: flex;
+        justify-content: center;
+    }
+    .first .left .image {
+        display: none;
+    }
+    .first .right{
+        display: flex;
+        justify-content: center;
+    }
+    .first .right .img {
+        display: none;
+    }
+    .second {
+        background-size: cover;
+        background-position: left;
+        padding-bottom: 500px;
+    }
+    .second .image{
+        display: none;
+    }
+    .fourth .img{
+        text-align: center;
+    }
+    .fourth .img img{
+        width: 50%;
+    }
+    .fourth .clock .img img {
+        width: 35px;
+        margin: 0 19px 0 6px;
+    }
+    .fifth .learn {
+        text-align: center;
+        padding-top: 15px;
+    }
+    .fifth .image {
+        text-align: center;
+    }
+    .fifth .image img {
+        width: 50%;
+    }
+    .sixth .cart .image img {
+        height: 50px;
+    }
+    .sixth .cart {
+        padding-top: 10px;
+        width: 90%;
+    }
+    .sixth .cart h4 {
+        padding: 5px 0 0;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .seventh .row{
+        display: flex;
+        justify-content: space-around;
+    }
+    .seventh .col-xs-3 {
+        width: 50%;
+    }
+    .eight .card li {
+        font-size: 11px;
+    }
+    .eight .button p {
+        font-size: 12px;
+    }
+    .third .title h1 {
+        font-size: 18px;
+    }
+    footer .image img {
+        width: 160px;
+        padding-top: 20px;
+    }
+    footer .img img {
+        width: 166px;
+    }
+    footer .text1{
+        padding-top: 0;
+    }
+    footer .text1 p{
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    footer .img img {
+        width: 270px;
+    }
+    footer .text {
+        padding: 12px 0 10px;
+    }
+}

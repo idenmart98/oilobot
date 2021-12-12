@@ -7,7 +7,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>oilobot</title>
-    <link rel="stylesheet" href="{% static '/css/posts/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/category/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/category/media.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
@@ -18,8 +19,7 @@
             <div class="col-lg-12">
                 <ul class="nav">
                     <li><a href="{% url 'posts:index_kg' %}">Башкы бет</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="{% url 'posts:post' lang='kg' %}">Макалалар</a></li>
+                    <li><a href="{% url 'posts:category' lang='kg' %}">Макалалар</a></li>
                     <li><a href="{% url 'posts:post_details' post_id=post.slug_id lang='ru' %}">Русский</a></li>
                 </ul>
             </div>
@@ -48,5 +48,22 @@
         </div>
     </div>
 </section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text1">
+                    <p>Ойло чат-ботунун иштелип чыгышын колдогон:</p>
+                </div>
+                <div class="img">
+                    <img src="{% static 'img/logo/my.png' %}" alt="">
+                </div>
+            </div>
+            <div class="text">
+                <p>Чат-ботто колдонулган аталыштар жана анда берилген материалдар кандайдыр бир ѳлкѳнүн, аймактын, шаардын же райондун же алардын башкаруу органдарынын, ошондой эле чек араларынын укуктук макамына байланыштуу иштеп чыгуучулардын ой-пикирин билдирбейт.  Бул чат-боттогу маалыматтар менен пикирлер автордук мүнѳздѳ болуп, иштеп чыгуучулардын расмий позициясына дал келбеши мүмкүн жана аларга бул боюнча эч кандай милдет жүктѳлбѳйт. Ден соолукка байланыштуу маалыматтар чат-бот тарабынан сурап-билүү үчүн гана берилген. Диагностикалоо же дарылоо максатында бул маалыматтарды пайдаланууга болбойт. Бардык медициналык суроолор боюнча дарыгерге кайрылуу зарыл.</p>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

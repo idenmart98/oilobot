@@ -5,6 +5,7 @@ from django_quill.fields import QuillField
 
 class Category(models.Model):
     title_ru = models.CharField(max_length=200,verbose_name = 'Заголовок на русском')
+    image = models.ImageField(upload_to='images')
     title_kg = models.CharField(max_length=200,verbose_name = 'Заголовок на кыргызском')
 
     class Meta:
@@ -21,7 +22,7 @@ class Post(models.Model):
     body_kg = QuillField(verbose_name='Тело поста на кыргызком')
     image = models.ImageField(upload_to='images', blank=True, null=True)
     slug_id = models.IntegerField(blank=True, null=True)
-    # category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
 
 
 
