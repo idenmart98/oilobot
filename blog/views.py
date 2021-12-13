@@ -29,7 +29,7 @@ def category_view(request, lang):
 
  
 def post_details(request, post_id, lang):
-    post = Post.objects.get(id=post_id)
+    post = Post.objects.get(slug_id=post_id)
     if lang == 'kg':
         return render(request, 'post_details_kg.html', context={'post': post})
     return render(request, 'post_details.html', context={'post': post})
