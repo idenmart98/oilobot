@@ -47,7 +47,7 @@ header .nav li a:hover{
 .carts .cart{
     border: solid 1px rgba(128, 123, 122, 0.51);
     border-radius: 3px;
-    padding: 10px 0 0 0;
+    padding: 0;
     margin-bottom: 20px;
 }
 .carts .cart .img{
