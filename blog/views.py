@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Question, Post, Category
+from django.shortcuts import get_object_or_404
 
 
 # def questions_view(request, lang):
@@ -12,6 +13,7 @@ def index(request, lang):
         return render(request, 'main.html')
     return render(request, 'mainkg.html')
 
+
 def index_kg(request):
     return render(request, 'mainkg.html')
 
@@ -21,15 +23,16 @@ def index_kg(request):
 #         return render(request, 'answer.html', {'answer':answer.answer_kg, 'lang':'ru'})
 #     return render(request, 'answer.html', {'answer':answer.answer_kg, 'lang':'ru'})
 
+
 def category_view(request, lang):
     categories = Category.objects.all()
     if lang == 'kg':
         return render(request, 'categorykg.html', context={'categories': categories})
     return render(request, 'category.html', context={'categories': categories})
 
- 
+
 def post_details(request, post_id, lang):
-    post = Post.objects.get(slug_id=post_id)
+    post = get_object_or_404(Post, slug_id=post_id)
     if lang == 'kg':
         return render(request, 'post_details_kg.html', context={'post': post})
     return render(request, 'post_details.html', context={'post': post})
@@ -38,7 +41,9 @@ def post_details(request, post_id, lang):
 def category_details(request, cat_id, lang):
     posts = Post.objects.filter(category_id=cat_id)
     if lang == 'kg':
-        return render(request, 'posts_kg.html', context={'posts': posts, 'cat_id': cat_id})
-    return render(request, 'posts.html', context={'posts': posts, 'cat_id': cat_id})
-
-
+        return render(request, 'posts_kg.html', context={
+            'posts': posts,
+            'cat_id': cat_id})
+    return render(request, 'posts.html', context={
+        'posts': posts,
+        'cat_id': cat_id})

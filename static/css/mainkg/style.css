@@ -54,6 +54,9 @@ header .link .btn a{
     text-decoration: none;
 }
 
+header .link p {
+    margin-bottom: 0rem;}
+
 .first .title {
     text-align: center;
     text-transform: uppercase;
@@ -265,6 +268,14 @@ footer .link {
 }
 footer .link a{
     color: #fff;
+}
+
+footer .link .btn a{
+    background: #00daff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
 }
 
 

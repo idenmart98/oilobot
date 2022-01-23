@@ -53,6 +53,8 @@ header .link .btn a{
     color: #fff;
     text-decoration: none;
 }
+header .link p {
+    margin-bottom: 0rem;}
 
 .first .title {
     text-align: center;
@@ -267,6 +269,13 @@ footer .link a{
     color: #fff;
 }
 
+footer .link .btn a{
+    background: #00daff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+}
 
 .form{
     border: solid 1px rgba(128, 128, 128, 0.44);

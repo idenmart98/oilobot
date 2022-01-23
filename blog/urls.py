@@ -7,6 +7,7 @@ from .views import (
     post_details,
     category_details, 
     index_kg)
+
 from django.urls import path
 
 app_name = 'posts'
